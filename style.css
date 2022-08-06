@@ -1,0 +1,37 @@
+body{
+    background-image: url(Picture/z3520007863806_c0828946a0b525262cec7b58949102b3.jpg); 
+    background-size: 50% 100%;
+}
+
+a:link{
+    color:brown;
+    font-style:italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a:visited{
+    color: blueviolet;
+    font-style:italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover{
+    color: darkgoldenrod;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size:25px;
+}
+
+img {
+    width: 250px; height: 250px;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #000000;
+}
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+

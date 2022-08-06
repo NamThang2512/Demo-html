@@ -1,1 +1,63 @@
-1
+★Style
+<body style="background-color:powderblue;">
+<h1 style="color:blue;">This is a heading</h1>
+<h1 style="font-family:verdana;">This is a heading</h1>
+<h1 style="font-size:300%;">This is a heading</h1>
+<h1 style="text-align:center;">Centered Heading</h1>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+
+★Formatting
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text => h20
+<sup> - Superscript text  => 2^2
+
+
+★Quote
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+★Short Quote
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+★Abbreviation
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+★Address
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+
+★cite
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+
+★Bi-direction override 
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+★Comment
+<!-- Write your comments here -->
+
+
+★Link
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
