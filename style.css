@@ -3,7 +3,7 @@ body{
 }
 
 h2 {
-    border-right: 1px solid gray; border-radius: 4px; width: auto; padding: 8px;
+    border-right: 1px solid lightgray; border-radius: 4px; width: auto; padding: 8px;
     background-color:rgb(243, 243, 216);
 }
 
@@ -11,7 +11,10 @@ h2:hover{
     background-color:rgb(241, 241, 171);
 }
 
-select:required:invalid {
+select:required:invalid{
+    color: gray;
+  }
+select:valid{
     color: gray;
   }
   option[value=""][disabled] {
@@ -21,18 +24,33 @@ select:required:invalid {
     color: black;
   }
 
+
   .Submit:hover{
     background-color: red;
   }
   
+  .center{
+    padding: 35px 0px 15px;
+  }
+
   .container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-auto-rows: minmax(10px, auto);
     grid-template-areas: 
     "Step1 Step2 Step3 Step4"
-    "Dangky Dangky Dangky Dangky"
+    "Dangky Dangky Dangky Dangky";
+    padding-left: 100px;
+    padding-right: 100px;
   }
+
+.container-1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-auto-rows: minmax(50px, auto); 
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
   .Dangkytiem{
     grid-area: Dangky;
