@@ -8,156 +8,180 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Đăng ký tiêm cá nhân</h1>
-    <h2><small>Bước 1</small><br>
-        Thông tin cá nhân
-    </h2>
-    <h2><small>Bước 2</small><br>
-        Tiền sử bệnh
-    </h2>
-    <h2><small>Bước 3</small><br>
-        Phiếu đồng ý tiêm
-    </h2>
-    <h2><small>Bước 4</small><br>
-        Hoàn thành
-    </h2> 
-
     <form>
-        <div style="text-align: center; font-weight: bold;">
-        <input type="radio" name="register" value="Đăng ký bản thân" checked>
-        <label for="register">Đăng ký bản thân</label>
-        <input type="radio" name="register" value="Đăng ký cho người thân"/>
-        <label for="register">Đăng ký cho người thân</label>
+        <h1>Đăng ký tiêm cá nhân</h1>
+        <div class="container">
+            <div class="Buoc-1 Buoc">
+                <h2><small>Bước 1</small><br>
+                Thông tin cá nhân</h2></div>
+            <div class="Buoc-2 Buoc">
+                <h2><small>Bước 2</small><br>
+                Tiền sử bệnh</h2></div>
+            <div class="Buoc-3 Buoc">
+                <h2><small>Bước 3</small><br>
+                Phiếu đồng ý tiêm</h2></div>
+            <div class="Buoc-4 Buoc">
+                <h2><small>Bước 4</small><br>
+                Hoàn thành</h2></div>
+            
+            <div class="Dangkytiem">
+                <input type="radio" name="register" value="Đăng ký bản thân" style="height: 20px; width: 20px; vertical-align: -2px;" checked>
+                <label for="register" style="font-size: 25px;">Đăng ký bản thân</label>
+                <input type="radio" name="register" value="Đăng ký cho người thân" style="height: 20px; width: 20px; vertical-align: -2px;"/>
+                <label for="register" style="font-size: 25px;">Đăng ký cho người thân</label></div>
+            
+            <div class="Buoc-1 Buoc">
+            <label for="Muitiem" style="font-size: 20px;">Đăng ký mũi tiêm thứ
+                <span style="color: red;">(*)</span></label><br>
+            <select id="Muitiem" name="Muitiem" style="padding: 5.2px; margin-top: 5px; width: 95%;" required>
+                <option value="" disabled selected hidden>Đăng ký mũi tiêm thứ</option>
+                <option value="Mũi tiêm thứ nhất" style="font-size: 15px;">Mũi tiêm thứ nhất</option>
+                <option value="Mũi tiêm tiếp theo" style="font-size: 15px;">Mũi tiêm tiếp theo</option>
+            </select></div>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+
+            <div class="Buoc-1 Buoc">
+            <p style="font-size: 20px; font-weight: bold;">1. Thông tin người đăng ký tiêm</p></div>
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <div class="Buoc-1 Buoc">
+                <!--Họ và tên-->
+                <label for="Ten">Họ và tên <span style="color: red;">(*)</span></label><br>
+                <input type="text" id="Ten" name="Ten" placeholder="Họ và tên"
+                style="padding: 5.2px; margin-top: 5px; width: 90%; " required/><br><br>
+    
+                <!--Email-->
+                <label for="Email">Email</label><br>
+                <input type="text" id="Email" name="Email" placeholder="Email"
+                style="padding: 5.2px; margin-top: 5px; width: 90%;"/><br><br>
+    
+                <!--Nghề nghiệp-->
+                <label for="NgheNghiep">Nghề nghiệp</label><br>
+                <input type="text" id="NgheNghiep" name="NgheNghiep" placeholder="Nghề nghiệp"
+                style="padding: 5.2px; margin-top: 5px; width: 90%;"/><br><br>
+    
+                <!--Tỉnh thành phố-->
+                <label for="TinhThanh">Tỉnh/Thành phố <span style="color: red;">(*)</span></label><br>
+                <select id="TinhThanh" name="TinhThanh" style="padding: 5.2px; margin-top: 5px; width: 95%;" required>
+                    <option value="" disabled selected hidden>Tỉnh/Thành phố</option>
+                    <option value="HN">Thành phố Hà Nội</option>
+                    <option value="HCM">Thành phố Hồ Chí Minh</option>
+                    <option value="DN">Thành phố Đà Nẵng</option>
+                 </select><br><br>
+    
+                <!--Dân tộc-->
+                <label for="DanToc">Dân Tộc <span style="color: red;">(*)</span></label><br>
+                <select id="DanToc" name="DanToc" style="padding: 5.2px; margin-top: 5px; width: 95%;" required>
+                    <option value="" disabled selected hidden>Dân Tộc</option>
+                    <option value="Kinh">Kinh</option>
+                    <option value="Muong">Mường</option>
+                    <option value="Mong">Mông</option>
+                </select><br><br>
+    
+                <!--Họ và tên người giám hộ-->
+                <label for="GiamHo">Họ và tên người giám hộ <span style="color: red;">(*)</span></label><br>
+                <input type="text" id="GiamHo" name="GiamHo" placeholder="Họ và tên người giám hộ"
+                style="padding: 5.2px; margin-top: 5px; width: 90%;"/><br><br></div>
+
+                <div class="Buoc-2 Buoc">
+                <!--Ngày sinh-->
+                <label for="NgaySinh">Ngày sinh <span style="color: red;">(*)</span></label><br>
+                <input type="date" id="NamSinh" name="NamSinh" placeholder="Ngày/Tháng/Năm"
+                style="padding: 4px; margin-top: 5px;" required/><br><br></div>
+    
+                
+                <div class="Buoc-2 Buoc">
+                <!--CCCD-->
+                <label for="CCCD">CCCD/CMND <span style="color: red;">(*)</span></label><br>
+                <input type="text" id="CCCD" name="CCCD" placeholder="CCCD/CMND"
+                style="padding: 5.2px; margin-top: 5px;" required/><br><br></div>
+
+                <div class="Buoc-2 Buoc">
+                <!--Đơn vị-->
+                <label for="DonVi">Đơn vị công tác</label><br>
+                <input type="text" id="DonVi" name="DonVi" placeholder="Đơn vị công tác"
+                style="padding: 5.2px; margin-top: 5px;"/><br><br>
+    
+                <!--Quận Huyện-->
+                <label for="QuanHuyen">Quận/Huyện <span style="color: red;">(*)</span></label><br>
+                <select id="QuanHuyen" name="QuanHuyen" style="padding: 5.2px; margin-top: 5px;" required>
+                    <option value="" disabled selected hidden>Quận/Huyện</option>
+                    <option value="HK">Hoàn Kiếm</option>
+                    <option value="BT">Bình Thạnh</option>
+                    <option value="ST">Sơn Trà</option>
+                </select><br><br>
+    
+                <!--Quốc tịch-->
+                <label for="QuocTich">Quốc Tịch <span style="color: red;">(*)</span></label><br>
+                <select id="QuocTich" name="QuocTich" style="padding: 5.2px; margin-top: 5px;" required>
+                    <option value="" disabled selected hidden>Quốc tịch</option>
+                    <option value="VN">Việt Nam</option>
+                    <option value="US">Hoa Kỳ</option>
+                    <option value="JP">Nhật Bản</option>
+                </select><br><br>
+    
+                <!--Quan hệ-->
+                <label for="QuanHe">Quan hệ <span style="color: red;">(*)</span></label><br>
+                <input type="text" id="QuanHe" name="QuanHe" placeholder="Quan hệ"
+                style="padding: 5.2px; margin-top: 5px"/><br><br></div>
+
+    
+
+    
+                <!--Giới tính
+                <label for="GioiTinh">Giới tính <span style="color: red;">(*)</span></label><br>
+                <select id="GioiTinh" name="GioiTinh" style="padding: 5.2px; margin-top: 5px;" required>
+                    <option value="" disabled selected hidden>Giới tính</option>
+                    <option value="Nam">Nam</option>
+                    <option value="Nu">Nữ</option>
+                </select><br><br>-->
+    
+                <!--Địa chỉ hiện tại
+                <label for="DiaChi">Địa chỉ hiện tại</label><br>
+                <input type="text" id="DiaChi" name="DiaChi" placeholder="Địa chỉ hiện tại"
+                style="padding: 4.7px; margin-top: 5px;"><br><br>-->
+    
+                <!--Xã phường
+                <label for="XaPhuong">Xã/Phường <span style="color: red;">(*)</span></label><br>
+                <select id="XaPhuong" name="XaPhuong" style="padding: 5.2px; margin-top: 5px;" required>
+                    <option value="" disabled selected hidden>Xã/Phường</option>
+                    <option value="HB">Phường Hàng Buồm</option>
+                    <option value="22">Phường 22</option>
+                    <option value="NHD">Phường Nại Hiên Đông</option>
+                </select><br><br>-->
+    
+                <!--Nhóm ưu tiên
+                <label for="UuTien">Nhóm ưu tiên <span style="color: red;">(*)</span></label><br>
+                <select id="UuTien" name="UuTien" style="padding: 5.2px; margin-top: 5px;" required>
+                    <option value="" disabled selected hidden>Nhóm ưu tiên</option>
+                    <option value="YT">1. Người trong ngành y tế</option>
+                    <option value="CD">2. Người tham gia chống dịch</option>
+                    <option value="QD">3. Lực lượng quân đội</option>
+                </select><br><br>-->
+    
+                <!--Số điện thoại người giám hộ
+                <label for="SoDienThoai1">Số điện thoại người giám hộ <span style="color: red;">(*)</span></label><br>
+                <input type="text" id="SoDienThoai1" name="SoDienThoai1" placeholder="Số điện thoại người giám hộ"
+                style="padding: 4.7px; margin-top: 5px;"><br><br>-->
+            
+    
+
+    
+                <!--Số điện thoại
+                <label for="SoDienThoai">Số điện thoại</label><br>
+                <input type="text" id="SoDienThoai" name="SoDienThoai" placeholder="Số điện thoại"
+                style="padding: 4.7px; margin-top: 5px;"><br><br>-->
+    
+                <!--Số thể BHYT
+                <label for="BHYT">Số thẻ BHYT</label><br>
+                <input type="text" id="SoDienThoai" name="SoDienThoai" placeholder="Số thẻ BHYT"
+                style="padding: 4.7px; margin-top: 5px;"><br><br>-->
+            
         </div>
-
-        <label for="Muitiem">Đăng ký mũi tiêm thứ
-            <span style="color: red;">(*)</span></label><br>
-        <select id="Muitiem" name="Muitiem" style="padding: 4px; margin-top: 5px;" required>
-            <option value="" disabled selected hidden>Đăng ký mũi tiêm thứ</option>
-            <option value="Mũi tiêm thứ nhất">Mũi tiêm thứ nhất</option>
-            <option value="Mũi tiêm tiếp theo">Mũi tiêm tiếp theo</option>
-        </select><br><br>
-
-        <p><b>1. Thông tin người đăng ký tiêm</b></p>
-        <!--Line 1-->
-        <label for="Ten" style="margin-right: 110px;">Họ và tên <span style="color: red;">(*)</span></label>
-        <label for="NgaySinh" style="margin-right: 45px;">Ngày sinh <span style="color: red;">(*)</span></label>
-        <label for="GioiTinh" style="margin-right: 30px;">Giới tính <span style="color: red;">(*)</span></label>
-        <label for="SoDienThoai">Số điện thoại</label><br>
-        <!--Line 1-->
-        
-        <!--Chọn line 1-->
-        <input type="text" id="Ten" name="Ten" placeholder="Họ và tên"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 16px;" required/>
-        <input type="date" id="NamSinh" name="NamSinh" placeholder="Ngày/Tháng/Năm"
-        style="padding: 4px; margin-top: 5px; margin-right: 12px;" required/>
-        <select id="GioiTinh" name="GioiTinh" style="padding: 5.2px; margin-top: 5px; width: 100px; margin-right: 10px;" required>
-            <option value="" disabled selected hidden>Giới tính</option>
-            <option value="Nam">Nam</option>
-            <option value="Nu">Nữ</option>
-        </select>
-        <input type="text" id="SoDienThoai" name="SoDienThoai" placeholder="Số điện thoại"
-        style="padding: 4.7px; margin-top: 5px; margin-right: 16px; width: 300px;"><br><br>
-        <!--Chọn line 1-->
-
-        <!--Line 2-->
-        <label for="Email" style="margin-right: 156px;">Email</label>
-        <label for="CCCD" style="margin-right: 129px;">CCCD/CMND <span style="color: red;">(*)</span></label>
-        <label for="BHYT">Số thẻ BHYT</label><br>
-        <!--Line 2-->
-        
-        <!--Chọn line 2-->
-        <input type="text" id="Email" name="Email" placeholder="Email"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 16px;"/>
-        <input type="text" id="CCCD" name="CCCD" placeholder="CCCD/CMND"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 7px; width: 225px;" required/>
-        <input type="text" id="SoDienThoai" name="SoDienThoai" placeholder="Số thẻ BHYT"
-        style="padding: 4.7px; margin-top: 5px; margin-right: 16px; width: 300px;"><br><br>
-        <!--Chọn line 2-->
-
-        <!--Line 3-->
-        <label for="NgheNghiep" style="margin-right: 111px;">Nghề nghiệp</label>
-        <label for="DonVi" style="margin-right: 145px;">Đơn vị công tác</label>
-        <label for="DiaChi">Địa chỉ hiện tại</label><br>
-        <!--Line 3-->
-
-        <!--Chọn line 3-->
-        <input type="text" id="NgheNghiep" name="NgheNghiep" placeholder="Nghề nghiệp"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 16px;"/>
-        <input type="text" id="DonVi" name="DonVi" placeholder="Đơn vị công tác"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 7px; width: 225px;"/>
-        <input type="text" id="DiaChi" name="DiaChi" placeholder="Địa chỉ hiện tại"
-        style="padding: 4.7px; margin-top: 5px; margin-right: 16px; width: 300px;"><br><br>
-        <!--Chọn line 3-->
-
-        <!--Line 4-->
-        <label for="TinhThanh" style="margin-right: 66px;">Tỉnh/Thành phố <span style="color: red;">(*)</span></label>
-        <label for="QuanHuyen" style="margin-right: 145px;">Quận/Huyện <span style="color: red;">(*)</span></label>
-        <label for="XaPhuong">Xã/Phường <span style="color: red;">(*)</span></label><br>
-        <!--Line 4-->
-
-        <!--Chọn line 4-->
-        <select id="TinhThanh" name="TinhThanh" style="padding: 5.2px; margin-top: 5px; margin-right: 15px;" required>
-            <option value="" disabled selected hidden>Tỉnh/Thành phố</option>
-            <option value="HN">Thành phố Hà Nội</option>
-            <option value="HCM">Thành phố Hồ Chí Minh</option>
-            <option value="DN">Thành phố Đà Nẵng</option>
-        </select>
-        <select id="QuanHuyen" name="QuanHuyen" style="padding: 5.2px; margin-top: 5px; margin-right: 6px; width: 241px;" required>
-            <option value="" disabled selected hidden>Quận/Huyện</option>
-            <option value="HK">Hoàn Kiếm</option>
-            <option value="BT">Bình Thạnh</option>
-            <option value="ST">Sơn Trà</option>
-        </select>
-        <select id="XaPhuong" name="XaPhuong" style="padding: 5.2px; margin-top: 5px; width: 312px;" required>
-            <option value="" disabled selected hidden>Xã/Phường</option>
-            <option value="HB">Phường Hàng Buồm</option>
-            <option value="22">Phường 22</option>
-            <option value="NHD">Phường Nại Hiên Đông</option>
-        </select><br><br>
-        <!--Chọn line 4-->
-
-        <!--Line 5-->
-        <label for="DanToc" style="margin-right: 114px;">Dân Tộc <span style="color: red;">(*)</span></label>
-        <label for="QuocTich" style="margin-right: 158px;">Quốc Tịch <span style="color: red;">(*)</span></label>
-        <label for="UuTien">Nhóm ưu tiên <span style="color: red;">(*)</span></label><br>
-        <!--Line 5-->
-
-        <!--Chọn line 5-->
-        <select id="DanToc" name="DanToc" style="padding: 5.2px; margin-top: 5px; margin-right: 15px; width: 176px;" required>
-            <option value="" disabled selected hidden>Dân Tộc</option>
-            <option value="Kinh">Kinh</option>
-            <option value="Muong">Mường</option>
-            <option value="Mong">Mông</option>
-        </select>
-        <select id="QuocTich" name="QuocTich" style="padding: 5.2px; margin-top: 5px; margin-right: 6px; width: 241px;" required>
-            <option value="" disabled selected hidden>Quốc tịch</option>
-            <option value="VN">Việt Nam</option>
-            <option value="US">Hoa Kỳ</option>
-            <option value="JP">Nhật Bản</option>
-        </select>
-        <select id="UuTien" name="UuTien" style="padding: 5.2px; margin-top: 5px; width: 312px;" required>
-            <option value="" disabled selected hidden>Nhóm ưu tiên</option>
-            <option value="YT">1. Người trong ngành y tế</option>
-            <option value="CD">2. Người tham gia chống dịch</option>
-            <option value="QD">3. Lực lượng quân đội</option>
-        </select><br><br>
-        <!--Chọn line 5-->
-
-        <!--Line 6-->
-        <label for="GiamHo" style="margin-right: 10px;">Họ và tên người giám hộ <span style="color: red;">(*)</span></label>
-        <label for="QuanHe" style="margin-right: 171px;">Quan hệ <span style="color: red;">(*)</span></label>
-        <label for="SoDienThoai1">Số điện thoại người giám hộ <span style="color: red;">(*)</span></label><br>
-        <!--Line 6-->        
-
-        <!--Chọn line 6-->
-        <input type="text" id="GiamHo" name="GiamHo" placeholder="Họ và tên người giám hộ"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 15px;"/>
-        <input type="text" id="QuanHe" name="QuanHe" placeholder="Quan hệ"
-        style="padding: 5.2px; margin-top: 5px; margin-right: 7px; width: 225px;"/>
-        <input type="text" id="SoDienThoai1" name="SoDienThoai1" placeholder="Số điện thoại người giám hộ"
-        style="padding: 4.7px; margin-top: 5px; margin-right: 16px; width: 300px;"><br><br>
-        <!--Chọn line 6-->
 
         <p><b>2. Thông tin đăng ký tiêm chủng</b></p>
         <!--Line 1-->
