@@ -56,19 +56,3 @@ select:valid{
     grid-area: Dangky;
     text-align: center;
   }
-
-  .Buoc1{
-    grid-area: Step1;
-  }
-
-  .Buoc2{
-    grid-area: Step2;
-  }
-  
-  .Buoc3{
-    grid-area: Step3;
-  }
-
-  .Buoc4{
-    grid-area: Step4;
-  }

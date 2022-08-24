@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style-js.css">
+</head>
+<body>
+    <h1 style="text-align: center;">CACULATOR</h1>
+    <div class="container-1 container">
+        <div class="result-1">
+            <span id="result" style="font-weight: bold; font-size: 30px;">0</span>
+        </div>
+    </div>
+
+    <div class="container-2 container">
+        <!-- result -->
+        <div class="button-1">
+            <button id="rad">Rad</button><span> | </span><button id="deg" style="color: rgb(205, 205, 205);">Deg</button>
+        </div>
+        <!-- x! -->
+        <div class="button-2">
+            <button id="exclamation" value="!">x!</button></div>
+        <!-- () -->
+        <div class="button-2" onclick="addParenthesis_1()">
+            <button id="parenthesis-1" value="(">(</button></div> 
+        <!-- ) -->
+        <div class="button-2" onclick="addParenthesis_2()">
+            <button id="parenthesis-2" value=")">)</button></div>
+        <!-- % -->
+        <div class="button-2" onclick="addPercentage()">
+            <button id="percentage" value="%">%</button></div>
+        <!--Clear-->
+        <div class="button-2">
+            <button id="clear">CE</button></div>
+    </div>
+
+    <div class="container-3 container">
+        <!-- Inv -->
+        <div class="button-2">
+            <button id="inv">Inv</button></div>
+        <!-- sin -->
+        <div class="button-2">
+            <button id="sin">sin</button></div>
+        <!-- ln -->
+        <div class="button-2">
+            <button id="ln">ln</button></div>
+        <!-- 7 -->
+        <div class="button-3" onclick="addSeven()">
+            <button id="seven" value="7">7</button></div>
+        <!-- 8 -->
+        <div class="button-3" onclick="addEight()">
+            <button id="eight" value="8">8</button></div>
+        <!-- 9 -->
+        <div class="button-3" onclick="addNine()">
+            <button id="nine" value="9">9</button></div>
+        <!-- Divide -->
+        <div class="button-2" onclick="addDivide()">
+            <button id="divide" value="÷">÷</button></div>
+    </div>
+    
+    <div class="container-4 container">
+        <!-- Pi -->
+        <div class="button-2">
+            <button id="pi">π</button></div>
+        <!-- cos -->
+        <div class="button-2">
+            <button id="cos">cos</button></div>
+        <!-- log -->
+        <div class="button-2">
+            <button id="log">log</button></div>
+        <!-- 4 -->
+        <div class="button-3" onclick="addFour()">
+            <button id="four" value="4">4</button></div>
+        <!-- 5 -->
+        <div class="button-3" onclick="addFive()">
+            <button id="five" value="5">5</button></div>
+        <!-- 6 -->
+        <div class="button-3" onclick="addSix()">
+            <button id="six" value="6">6</button></div>
+        <!-- Multiple -->
+        <div class="button-2" onclick="addMultiple()">
+            <button id="multiple" value="x">x</button></div>
+    </div>
+        
+    <div class="container-5 container">
+        <!-- Euler's number -->
+        <div class="button-2">
+            <button id="euler">e</button></div>
+        <!-- tan -->
+        <div class="button-2">
+            <button id="tan">tan</button></div>
+        <!-- square root -->
+        <div class="button-2">
+            <button id="square">√</button></div>
+        <!-- 1 -->
+        <div class="button-3" onclick="addOne()">
+            <button id="one" value="1">1</button></div>
+        <!-- 2 -->
+        <div class="button-3" onclick="addTwo()">
+            <button id="two" value="2">2</button></div>
+        <!-- 3 -->
+        <div class="button-3" onclick="addThree()">
+            <button id="three" value="3">3</button></div>
+        <!-- minus -->
+        <div class="button-2" onclick="addMinus()">
+            <button id="minus" value="-">-</button></div>
+    </div>
+            
+    <div class="container-6 container">
+        <!-- Ans last result -->
+        <div class="button-2">
+            <button id="answer">Ans</button></div>
+        <!-- Exponential -->
+        <div class="button-2">
+            <button id="exp">Exp</button></div>
+        <!-- Caret -->
+        <div class="button-2">
+            <button id="caret">^</button></div>
+        <!-- 0 -->
+        <div class="button-3" onclick="addZero()">
+            <button id="zero" value="0">0</button></div>
+        <!-- Decimal -->
+        <div class="button-3" onclick="addDecimal()">
+            <button id="decimal" value=".">.</button></div>
+        <!-- Equal -->
+        <div class="button-4">
+            <button id="equal">=</button></div>
+        <!-- plus -->
+        <div class="button-2" onclick="addPlus()">
+            <button id="plus" value="+">+</button></div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: minmax(0px, 40px);
+    /*margin: 5px; */
+}
+
+.result-1{
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border: 1px solid lightgray;
+    padding-right: 5px;
+    text-align: right;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    width: 45%;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    margin-top: 2px;
+    background-color: rgb(158, 158, 158);
+}
+
+/* Rad & Deg */
+.button-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: rgb(158, 158, 158);
+}
+
+/* Arithmetic button */
+.button-2{
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: rgb(158, 158, 158);
+}
+
+/* Number button */
+.button-3{
+    text-align: center;
+    border-radius: 5px;
+    background-color: gray;
+    margin: 3px;
+}
+
+#zero,#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#decimal{
+    background-color: gray;
+}
+
+.button-4{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(116, 192, 218);
+    margin: 3px;
+}
+
+#equal{
+    background-color: rgb(116, 192, 218);
+}
+

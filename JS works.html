@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        select{
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="amount">
+            <label for="amount">Amount</label><br />
+            <input type="number" id="amount">
+        </div>
+
+        <div class="fromCurrency">
+            <label for="fromC">From Currency</label><br />
+            <select id="fromC" onchange="update()">
+                <option value="VND">Vietnam Dong</option>
+                <option value="USD">US Dollar</option>
+                <option value="AUD">AUS Dollar</option>
+                <option value="JPY">Japan Yen</option>
+                <option value="KRW">Korean Won</option>
+            </select>
+        </div>
+
+        <div class="toCurrency">
+            <label for="toC">To Currency</label><br />
+            <select id="toC" onchange="update()">
+                <option value="VND">Vietnam Dong</option>
+                <option value="USD">US Dollar</option>
+                <option value="AUD">AUS Dollar</option>
+                <option value="JPY">Japan Yen</option>
+                <option value="KRW">Korean Won</option>
+            </select>
+        </div>
+
+        <button type="button"  id="convert" onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        var amount;
+
+        function update(){
+            var selectFrom = document.getElementById('fromC');
+            var fromC = selectFrom.options[selectFrom.selectedIndex].value;
+            console.log(fromC)
+
+            var selectTo = document.getElementById('toC');
+            var fromC = selectTo.options[selectTo.selectedIndex].value;
+            console.log(toC)
+        }
+
+
+    </script>
+</body>
+</html>
